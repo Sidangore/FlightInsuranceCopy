@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20"></div>
+
+        <span style="display:block; height: 20px;"></span>
+        <h2>Flight</h2>
+        <div id="display-wrapper-flight-status" class="top-20"></div>
+        <div class="row">
+            <label for="flights1">Flight</label>
+            <select id="flights1"></select>&nbsp;
+            <div id="flightInfo1"></div>
+
+            <button class="btn btn-primary" id="submit-oracle">Submit to Oracles</button>
+        </div>
+        <span style="display:block; height: 50px;"></span>
+
+        <h4>Buy Flight Insurance</h4>
+        <div id="display-wrapper-insurance-info" class="top-20"></div>
+        <div id="display-wrapper-insurance-status" class="top-20"></div>
+        <div class="row">
+            <label for="flights2">Flight</label>
+            <select id="flights2"></select>
+            <label for="insurance-amount">Amount (ETH)</label><input type="text" id="insurance-amount" value="1" />
+            <button class="btn btn-primary" id="buy">Buy Insurance</button>
+            <span style="display:block; height: 50px;"></span>
+            <div id="flightInfo2"></div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
